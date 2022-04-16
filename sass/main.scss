@@ -1,14 +1,16 @@
 @import"./utils/variables";
+@import"./base/fonts";
 @import"./base/normalize";
-@import"./components/WedStudio/header";
-@import"./components/WedStudio/hero";
-@import"./components/WedStudio/services";
-@import"./components/WedStudio/content";
-@import"./components/WedStudio/team";
-@import"./components/WedStudio/client";
-@import"./components/WedStudio/footer";
-@import"./components/WedStudio/modal";
-@import"./components/portfolio/header";
+@import"./components/header";
+@import"./components/hero";
+@import"./components/services";
+@import"./components/content";
+@import"./components/team";
+@import"./components/client";
+@import"./components/footer";
+@import"./components/header";
+@import"./components/modal";
+
 
 
 
