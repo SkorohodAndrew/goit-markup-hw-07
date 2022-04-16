@@ -3,17 +3,6 @@
     color: $primary-text-color;
     border: 1px solid #ececec;
 }
-.main-nav {
-    display: flex;
-    align-items: center;
-}
-.navigation {
-    display: flex;
-    align-items: center;
-}
-
-/* logo */
-
 .logo {
     font-family: $secondary-font;
     font-weight: 700;
@@ -22,7 +11,6 @@
     letter-spacing: 0.03em;
     color: $accent-color;
     text-decoration: none;
-
 }
 
 .logo__studio {
@@ -34,7 +22,11 @@
     color: $primary-text-color;
 }
 
-/* link */
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
 .site-nav {
     display: flex;
     font-weight: 500;
@@ -45,23 +37,11 @@
 
 .site-nav__link {
     position: relative;
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    color: $primary-text-color;
-    text-decoration: none;
-    transition: color 250ms $timing-function;
-
-    &:hover,
-    &:focus{
-        color: $accent-color;
-    }
-    &--active {
-        color: $accent-color;
-
-    
-    }
 }
+.site-nav__link--active {
+    color: $accent-color;
+}
+
 
 .site-nav__first::after {
     content: "";
@@ -77,11 +57,22 @@
 
 .site-nav__item {
     margin-right: 50px;
-
-    &:last-child{
-        margin-right: 0;
-    }
 }
+
+.site-nav__item:last-child {
+    margin-right: 0;
+}
+
+
+
+.site-nav__link:hover,
+.site-nav__link:focus {
+    color: $accent-color;
+}
+
+
+
+
 
 /* icon */
 .contact {
@@ -95,6 +86,7 @@
     align-items: center;
     margin-right: 10px;
     fill: currentColor;
+
 }
 
 .contact__link {
@@ -102,14 +94,20 @@
     align-items: center;
     color: $secondary-text-color;
     text-decoration: none;
-    transition: color 250ms var $timing-function;
-
-    &:hover,
-    &:focus{
-        color: $accent-color;
-    }
+    transition: color 250ms $timing-function;
 }
 
 .contact__item {
     margin-right: 30px;
 }
+
+.contact__link:hover,
+.contact__link:focus {
+    color: $accent-color;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+

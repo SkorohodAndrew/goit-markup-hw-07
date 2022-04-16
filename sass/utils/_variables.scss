@@ -1,6 +1,8 @@
 /* Шрифт */
-// $main-font: "Roboto",sans-serif;
-// $secondary-font: "Raleway",sans-serif;
+$main-font: "Roboto",
+sans-serif;
+$secondary-font: "Raleway",
+sans-serif;
 /* Цвет текста  */
 $primary-text-color: #212121;
 $secondary-text-color: #757575;
@@ -17,14 +19,19 @@ $primary-icon-color: #afb1b8;
 $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .body {
-    font-family: "Roboto", sans-serif;
+    font-family: $main-font;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: $primary-text-color;
 }
+
+.section {
+    padding: 94px 0;
+}
+
 .title {
-    font-family: "Roboto" ,sans-serif;
+    font-family: $main-font;
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
@@ -33,17 +40,20 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     text-align: center;
     margin-bottom: 50px;
 }
+
 h1,
 h2,
 h3,
 p {
     margin: 0;
 }
+
 .list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 .checkbox {
     width: 1px;
     height: 1px;
@@ -55,6 +65,7 @@ p {
 
     position: absolute;
 }
+
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -62,6 +73,7 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
+
 img {
     display: block;
     max-width: 100%;

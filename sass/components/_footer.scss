@@ -1,34 +1,38 @@
+/* Footer */
+
 .footer {
     background-color: $primaty-bc-color;
     padding: 60px 0;
 }
+
 /* footer-colum */
 .footer-colum {
     display: flex;
     align-items: baseline;
 }
+
 .footer-colum-list {
     margin-right: 70px;
 }
+
 .footer__logo {
     display: block;
     margin-bottom: 20px;
 }
-.footer__logo .footer__secondary {
+
+.footer__secondary {
     color: $primary-header-color;
 }
+
 .footer-place__list {
     margin-bottom: 9px;
-    &:last-child{
-        margin-bottom: 0;
-    }
 }
 
-.footer-place__mail {
-    display: inline-block;
+.footer-place__list:last-child {
+    margin-bottom: 0;
 }
 
-.footer-place__map{
+.footer-place__map {
     display: inline-block;
     font-family: $main-font;
     color: $title-text-color;
@@ -37,7 +41,14 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-decoration: none;
-    }
+}
+
+.footer-place__mail {
+    display: inline-block;
+}
+
+.footer-place__phone {
+    display: inline-block;
 }
 
 .footer-place__mail,
@@ -52,7 +63,9 @@
     text-decoration: none;
 }
 
+
 /* footer-icon */
+
 .footer-icon__title {
     color: $title-text-color;
     margin-bottom: 20px;
@@ -62,6 +75,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
+
 .footer-media {
     display: flex;
     justify-content: center;
@@ -69,9 +83,11 @@
     flex-direction: row;
     margin-right: 93px;
 }
+
 .footer-media__catalog {
     margin-right: 10px;
 }
+
 .footer-media__item {
     display: flex;
     justify-content: center;
@@ -82,25 +98,32 @@
     background-color: rgba(255, 255, 255, 0.1);
     fill: $title-text-color;
     transition: background-color 250ms $timing-function;
-
-    &:hover,
-    &:focus{
-        background-color: $accent-color;
-    }
 }
+
+.footer-media__item:hover,
+.footer-media__item:focus {
+    background-color: $accent-color;
+}
+
+
 
 /* fotter-chek */
+
 .footer-label {
     position: relative;
+
 }
+
 .footer-label__form {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .footer-label__email {
     margin-right: 12px;
 }
+
 .footer-label__text {
     padding: 15px 16px 15px;
     width: 358px;
@@ -108,15 +131,17 @@
     border-radius: 4px;
     outline: transparent;
     background-color: $primaty-bc-color;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-
-    &::placeholder{
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
-        letter-spacing: 0.03em;
-    }
+    border: 1px solid rgba(255, 255, 255, 0.3)
 }
+
+.footer-label__text::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+}
+
+
 .hero-button-ft {
     display: flex;
     justify-content: center;
@@ -133,6 +158,7 @@
     cursor: pointer;
     border-radius: 4px
 }
+
 .hero-button-ft__icon {
 
     display: inline-block;
