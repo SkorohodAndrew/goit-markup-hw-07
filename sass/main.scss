@@ -1,6 +1,6 @@
-@import"./utils/variables";
-@import"./base/fonts";
+@import"./base/font";
 @import"./base/normalize";
+@import"./utils/variables";
 @import"./components/header";
 @import"./components/hero";
 @import"./components/services";
@@ -10,7 +10,5 @@
 @import"./components/footer";
 @import"./components/header";
 @import"./components/modal";
-
-
 
 
