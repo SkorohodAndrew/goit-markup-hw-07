@@ -69,6 +69,7 @@
     padding: 63px 24px 63px 24px;
     width: 100%;
     height: 100%;
+    opacity: 0;
 
 
     transform: translateY(100%);
@@ -84,5 +85,6 @@
 .card-project:hover .card-project__bc,
 .card-project:focus .card-project__bc {
     transform: translateY(0);
+    opacity: 1;
 
 }

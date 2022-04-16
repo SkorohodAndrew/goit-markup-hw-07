@@ -37,8 +37,18 @@
 
 .site-nav__link {
     position: relative;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $primary-text-color;
+    text-decoration: none;
+    transition: color 250ms $timing-function;
 }
+
 .site-nav__link--active {
+    color: $accent-color;
+}
+.site-nav__first{
     color: $accent-color;
 }
 
