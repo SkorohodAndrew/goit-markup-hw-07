@@ -830,7 +830,7 @@ padding: 15px 16px 15px;
   transition: fill 250ms var(--timing-function);
 }
 .modal-close:hover,
-.modal-close:hover,{
+.modal-close:hover{
   fill: var(--accent-color);
 }
 
