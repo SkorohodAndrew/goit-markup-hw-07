@@ -13,27 +13,30 @@
     transition: opacity 250ms $timing-function;
 }
 
-.backdrop.is-hidden {
+.is-hidden {
     opacity: 0;
     pointer-events: none;
 
 }
 
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0.9);
-}
 .modal {
-    padding: 40px;
     position: absolute;
+    padding: 40px;
     top: 50%;
     left: 50%;
+
+
     width: 528px;
     height: 581px;
     transform: translate(-50%, -50%) scale(1);
     background-color: $title-bc-color;
     transition: transform 250ms $timing-function;
     border-radius: 4px;
+
 }
+
+
+
 .modal-close {
     position: absolute;
     display: flex;
@@ -48,12 +51,16 @@
     background-color: $title-bc-color;
     border-radius: 50%;
     transition: fill 250ms $timing-function;
+
+    &:hover,
+    &:focus{
+        fill: $accent-color;
+    }
 }
-.modal-close:hover,
-.modal-close:hover {
-    fill: $accent-color;
-}
+
+
 .modal-text {
+    font-family: $main-font;
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
@@ -61,6 +68,8 @@
     letter-spacing: 0.03em;
     color: $primary-text-color;
 }
+
+
 .hero-label {
     position: relative;
     display: flex;
@@ -73,6 +82,8 @@
     line-height: 1.17;
     letter-spacing: 0.01em;
 }
+
+
 
 .hero-label:focus-within>.hero-label__icon {
     fill: var(--accent-color);
@@ -92,10 +103,12 @@
     box-sizing: border-box;
     border-radius: 4px;
     transition: border 250ms $timing-function;
+
+    &:focus{
+        border: 1px solid $accent-color;
+    }
 }
-.hero-label__input:focus {
-    border: 1px solid $accent-color;
-}
+
 
 .hero-label__position {
     position: relative;
@@ -115,6 +128,10 @@
 .hero-label__position:focus-within>.hero-label__icon {
     fill: $accent-color;
 }
+
+
+
+
 textarea {
     resize: none;
 }
@@ -137,19 +154,20 @@ textarea {
     box-sizing: border-box;
     border-radius: 4px;
     transition: border 250ms $timing-function;
+
+    &:focus{
+        border: 1px solid $accent-color;
+        }
+
+        &::placeholder{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.01em;
+            color: rgba(117, 117, 117, 0.5);
+        }
 }
 
-.hero-label__textarea:focus {
-    border: 1px solid $accent-color;
-}
-
-.hero-label__textarea::placeholder {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-}
 
 
 
@@ -169,6 +187,7 @@ textarea {
     border: 2px solid $primary-text-color;
     background-origin: content-box;
 }
+
 
 .checkbox:checked+.checkbox-lebel__position {
     background-color: $accent-color;

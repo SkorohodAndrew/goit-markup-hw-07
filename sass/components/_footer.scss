@@ -1,8 +1,6 @@
-/* Footer */
-
 .footer {
-    background-color: $primaty-bc-color;
     padding: 60px 0;
+    background-color: $primaty-bc-color;
 }
 
 /* footer-colum */
@@ -26,29 +24,24 @@
 
 .footer-place__list {
     margin-bottom: 9px;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
 }
 
-.footer-place__list:last-child {
-    margin-bottom: 0;
-}
 
 .footer-place__map {
     display: inline-block;
-    font-family: $main-font;
-    color: $title-text-color;
+  
     font-style: normal;
+    font-family: $main-font;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-decoration: none;
-}
 
-.footer-place__mail {
-    display: inline-block;
-}
-
-.footer-place__phone {
-    display: inline-block;
+    color: $title-text-color;
 }
 
 .footer-place__mail,
@@ -98,12 +91,13 @@
     background-color: rgba(255, 255, 255, 0.1);
     fill: $title-text-color;
     transition: background-color 250ms $timing-function;
+
+    &:hover,
+    &:focus{
+        background-color: $accent-color;
+    }
 }
 
-.footer-media__item:hover,
-.footer-media__item:focus {
-    background-color: $accent-color;
-}
 
 
 
@@ -132,6 +126,8 @@
     outline: transparent;
     background-color: $primaty-bc-color;
     border: 1px solid rgba(255, 255, 255, 0.3)
+
+
 }
 
 .footer-label__text::placeholder {
@@ -139,6 +135,7 @@
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.03em;
+    
 }
 
 
@@ -146,25 +143,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     width: 200px;
     padding: 10px 0 10px 0;
     border: transparent;
-    background-color: $accent-color;
-    color: $title-text-color;
+    cursor: pointer;
+    border-radius: 4px;
+   
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    cursor: pointer;
-    border-radius: 4px
+
+    background-color: $accent-color;
+    color: $title-text-color;
 }
 
 .hero-button-ft__icon {
-
     display: inline-block;
+    margin-left: 10px;
+
     width: 24px;
     height: 24px;
+
     fill: $title-bc-color;
-    margin-left: 10px;
 
 }

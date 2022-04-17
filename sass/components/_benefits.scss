@@ -9,14 +9,16 @@
 
 .benefits__item {
     margin-right: 30px;
+
+    &:last-child{
+        margin-right: 0;
+    }
 }
 
-.benefits__item:last-child {
-    margin-right: 0;
-}
 
 .benefits__name {
     margin-bottom: 10px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -26,11 +28,12 @@
 
 
 .benefits__text {
-    color: $secondary-text-color;
+    font-family: $main-font;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    color: $secondary-text-color;
 }
 
 
@@ -38,6 +41,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
     height: 120px;
     width: 270px;
     margin-bottom: 30px;

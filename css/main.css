@@ -387,20 +387,16 @@ summary {
   color: #2196f3;
 }
 
-.site-nav__first {
-  color: #2196f3;
-}
-
 .site-nav__first::after {
   content: "";
-  bottom: -1px;
-  left: 0;
   position: absolute;
   display: block;
+  bottom: -1px;
+  left: 0;
   width: 100%;
   height: 4px;
-  background-color: #2196f3;
   border-radius: 2px;
+  background-color: #2196f3;
 }
 
 .site-nav__item {
@@ -411,8 +407,7 @@ summary {
   margin-right: 0;
 }
 
-.site-nav__link:hover,
-.site-nav__link:focus {
+.site-nav__item:hover, .site-nav__item:focus {
   color: #2196f3;
 }
 
@@ -441,19 +436,18 @@ summary {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #757575;
   text-decoration: none;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #757575;
+}
+
+.contact__link:hover, .contact__link:focus {
+  color: #2196f3;
 }
 
 .contact__item {
   margin-right: 30px;
-}
-
-.contact__link:hover,
-.contact__link:focus {
-  color: #2196f3;
 }
 
 .main-nav {
@@ -483,29 +477,29 @@ summary {
 
 .hero-title {
   margin-bottom: 30px;
-  color: #ffffff;
+  margin-right: 0;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  margin-right: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #ffffff;
 }
 
 .hero-button {
   width: 200px;
   padding: 10px 32px 10px 31px;
   border: transparent;
-  background-color: #2196f3;
-  color: #ffffff;
+  cursor: pointer;
+  border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  cursor: pointer;
-  border-radius: 4px;
+  background-color: #2196f3;
+  color: #ffffff;
 }
 
 .section {
@@ -539,11 +533,12 @@ summary {
 }
 
 .benefits__text {
-  color: #757575;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  color: #757575;
 }
 
 .benefits__icon {
@@ -703,8 +698,7 @@ summary {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.network__media:hover,
-.network__media:focus {
+.network__media:hover, .network__media:focus {
   fill: #ffffff;
   background-color: #2196f3;
 }
@@ -738,16 +732,14 @@ summary {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clientage__list:hover,
-.clientage__list:focus {
+.clientage__list:hover, .clientage__list:focus {
   border: 1px solid #2196f3;
   fill: #2196f3;
 }
 
-/* Footer */
 .footer {
-  background-color: #2f303a;
   padding: 60px 0;
+  background-color: #2f303a;
 }
 
 /* footer-colum */
@@ -783,21 +775,13 @@ summary {
 
 .footer-place__map {
   display: inline-block;
-  font-family: "Roboto", sans-serif;
-  color: #ffffff;
   font-style: normal;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   text-decoration: none;
-}
-
-.footer-place__mail {
-  display: inline-block;
-}
-
-.footer-place__phone {
-  display: inline-block;
+  color: #ffffff;
 }
 
 .footer-place__mail,
@@ -862,8 +846,7 @@ summary {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-media__item:hover,
-.footer-media__item:focus {
+.footer-media__item:hover, .footer-media__item:focus {
   background-color: #2196f3;
 }
 
@@ -939,22 +922,22 @@ summary {
   width: 200px;
   padding: 10px 0 10px 0;
   border: transparent;
-  background-color: #2196f3;
-  color: #ffffff;
+  cursor: pointer;
+  border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  cursor: pointer;
-  border-radius: 4px;
+  background-color: #2196f3;
+  color: #ffffff;
 }
 
 .hero-button-ft__icon {
   display: inline-block;
+  margin-left: 10px;
   width: 24px;
   height: 24px;
   fill: #f5f4fa;
-  margin-left: 10px;
 }
 
 /* Модальное окно */
@@ -970,19 +953,14 @@ summary {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden {
+.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
 
-.backdrop.is-hidden .modal {
-  -webkit-transform: translate(-50%, -50%) scale(0.9);
-          transform: translate(-50%, -50%) scale(0.9);
-}
-
 .modal {
-  padding: 40px;
   position: absolute;
+  padding: 40px;
   top: 50%;
   left: 50%;
   width: 528px;
@@ -1020,12 +998,12 @@ summary {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close:hover,
-.modal-close:hover {
+.modal-close:hover, .modal-close:focus {
   fill: #2196f3;
 }
 
 .modal-text {
+  font-family: "Roboto", sans-serif;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;

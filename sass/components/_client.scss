@@ -11,18 +11,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     height: 92px;
     width: 170px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
+
     fill: $primary-icon-color;
     transition: fill 250ms $timing-function,
         border 250ms $timing-function;
 
-}
+        &:hover,
+        &:focus{
+            border: 1px solid $accent-color;
+            fill: $accent-color;
+            } 
 
-.clientage__list:hover,
-.clientage__list:focus {
-    border: 1px solid $accent-color;
-    fill: $accent-color;
 }
