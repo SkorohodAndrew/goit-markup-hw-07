@@ -189,7 +189,7 @@ img {
   color: var(--accent-color);
 }
 
-.main-nav {
+.header__container {
   display: flex;
   align-items: center;
 }
@@ -213,7 +213,7 @@ img {
   margin-right: auto;
 }
 
-.hero-title {
+.hero__title {
   margin-bottom: 30px;
   color: var(--title-text-color);
   font-weight: 900;
@@ -224,7 +224,7 @@ img {
   align-items: center;
 }
 
-.hero-button {
+.hero__button {
   width: 200px;
   padding: 10px 32px 10px 31px;
   border: transparent;
@@ -256,7 +256,7 @@ img {
   margin-right: 0;
 }
 
-.benefits__name {
+.benefits__title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -275,7 +275,7 @@ img {
 }
 
 
-.benefits__icon {
+.benefits__box {
   display: flex;
   justify-content: center;
   align-items: center;
